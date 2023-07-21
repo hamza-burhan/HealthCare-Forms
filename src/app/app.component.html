@@ -1,0 +1,7 @@
+<div style="display: block;">
+    <button *ngIf="isEliteFormPage || isChildShelterFormPage|| isMedicareFormPage" mat-raised-button color="primary" routerLink="/physician-form" class="top-button">Physician Order Form</button>
+    <button *ngIf="isPhysicianFormPage || isChildShelterFormPage|| isMedicareFormPage" mat-raised-button color="primary" routerLink="/elite-form" class="top-button">Elite Form</button>
+    <button *ngIf="isPhysicianFormPage || isEliteFormPage ||isMedicareFormPage " mat-raised-button color="primary" routerLink="/shelter-form" class="top-button">Child Shelter Form</button>
+    <button *ngIf="isPhysicianFormPage || isEliteFormPage || isChildShelterFormPage  " mat-raised-button color="primary" routerLink="/medicare-form" class="top-button">Medicare Form</button>
+    </div>
+    <router-outlet></router-outlet>

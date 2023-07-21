@@ -1,0 +1,795 @@
+<form [formGroup]="eliteForm">
+  <div class="main-container">
+    <div class="elite-health-heder">
+      <div class="header-pic">
+        <div>
+          <img src="../../assets/Elite-logo.png">
+        </div>
+      </div>
+      <div class="heder-rows">
+        <div class="rows">
+          <div class="row1">
+            <div class="check-box">
+              <mat-checkbox formControlName="sugarLand"></mat-checkbox> <span
+                style="color: #562b32;margin-left: 10px; text-decoration: underline;font-weight: 500;font-size: larger;">SUGAR
+                LAND</span>
+            </div>
+            <span>19875 Southwest Fwy</span>
+            <span style="margin-left: 40px;"> Suite 110</span>
+            <span> Sugar Land, TX 77479</span>
+            <span>(59 & Grand Parkway)</span>
+            <span>Ph: 281-545-2226</span>
+            <span>Fax: 281-545-2231</span>
+          </div>
+        </div>
+        <div class="rows">
+          <div class="row1">
+            <div class="check-box">
+              <mat-checkbox formControlName="medicalCenter"></mat-checkbox><span
+                style="color: #562b32;margin-left: 10px; text-decoration: underline;font-weight: 500;font-size: larger;">MEDICAL
+                CENTER</span>
+            </div>
+            <span>2416 W Holcombe </span>
+            <span style="margin-left: 40px;"> Suite B</span>
+            <span> Houston, TX 77030</span>
+            <span>(Kirby & W.Holcombe)</span>
+            <span>Ph: 832-925-7179</span>
+            <span>Fax: 832-925-7180</span>
+          </div>
+        </div>
+        <div class="rows">
+          <div class="row1" style="border: none;">
+            <div class="check-box">
+              <mat-checkbox formControlName="westHuston"></mat-checkbox><span
+                style="color: #562b32;margin-left: 10px; text-decoration: underline;font-weight: 500;font-size: larger;">West
+                Houston</span>
+            </div>
+            <span>4001 W. Sam Houston </span>
+            <span>Pkwy N, Suite 110</span>
+            <span> Houston,TX 77043 </span>
+            <span>(Beltway 8 & Clay)</span>
+            <span>Ph: 713-996-0900</span>
+            <span>Fax: 713-996-0901</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-conainer">
+      <div class="forms">
+        <div class="form-row">
+          <!-- <div class="form-first-row"> -->
+          <div class="form-first-name">
+            <div>
+              <span>First Name:</span>
+              <input type="text" formControlName="firstName">
+            </div>
+          </div>
+          <div class="form-last-name">
+            <div>
+              <span>Last Name:</span>
+              <input type="text" formControlName="lastName">
+            </div>
+          </div>
+          <div class="form-sex">
+            <div>
+              <span>Sex:</span>
+              <div class="mat-checkbox">
+                <mat-checkbox formControlName="Male"><span>M</span></mat-checkbox>
+                <mat-checkbox formControlName="Female"><span>F</span></mat-checkbox>
+              </div>
+            </div>
+          </div>
+
+          <!-- </div> -->
+        </div>
+        <div class="form-row">
+          <div class="section-two" style="border-right: 1px solid gray;">
+            <div>
+              <span>DOB:</span>
+              <input type="text" formControlName="Dob">
+            </div>
+          </div>
+          <div class="section-two" style="border-right: 1px solid gray;">
+            <div>
+              <span>S.S.#:</span>
+              <input type="text" formControlName="S_s">
+            </div>
+          </div>
+          <div class="section-two" style="border-right: 1px solid gray;">
+            <div>
+              <span>Home Phone:</span>
+              <input type="text" formControlName="homePhone">
+            </div>
+          </div>
+          <div class="cell-phone">
+            <div>
+              <span>Cell Phone:</span>
+              <input type="text" formControlName="cellPhone">
+            </div>
+          </div>
+
+        </div>
+        <div class="form-row">
+          <div class="section-two" style="border-right: 1px solid gray;">
+            <div>
+              <span>Insurrance:</span>
+              <input type="text" formControlName="insurrance">
+            </div>
+          </div>
+          <div class="section-two" style="border-right: 1px solid gray;">
+            <div>
+              <span>Date of Injury:</span>
+              <input type="date" class="input-des" formControlName="dateInjury">
+            </div>
+          </div>
+          <div class="section-two" style="border-right: 1px solid gray;">
+            <div>
+              <span>ID#:</span>
+              <input type="text" formControlName="ID">
+            </div>
+          </div>
+          <div class="cell-phone">
+            <div>
+              <span>Group#:</span>
+              <input type="text" formControlName="Group">
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="order-physican" style="border-right: 1px solid gray;">
+            <div>
+              <span> Ordering Physician:</span>
+              <input type="text" formControlName="orderPhysician">
+            </div>
+          </div>
+          <div class="numbers-phone" style="border-right: 1px solid gray;">
+            <div>
+              <span>Phone #:</span>
+              <input type="text" formControlName="Phone">
+            </div>
+
+          </div>
+          <div class="numbers-fax">
+            <div>
+              <span>Fax #:</span>
+              <input type="text" formControlName="Fax">
+            </div>
+
+          </div>
+        </div>
+        <div class="form-row-2last">
+          <div class="copy-des" style="border-right: 1px solid gray;">
+            <div>
+              <mat-checkbox formControlName="cdCopy"></mat-checkbox><span>CD Copy</span>
+              <mat-checkbox formControlName="copyFilm"></mat-checkbox><span>Copy of Film</span>
+            </div>
+
+          </div>
+          <div class="stats">
+            <div>
+              <span>STAT</span>
+              <div class="two-checkboxes">
+                <mat-checkbox formControlName="verbalPhone"></mat-checkbox><span >Verbal Phone</span>
+                <mat-checkbox formControlName="statFax"></mat-checkbox><span >Fax</span>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="form-row"></div> -->
+
+        </div>
+        <div class="form-row-last">
+          <div class="diagnosis" style="border-right: 1px solid gray;">
+            <div>
+              <span>Clinical Findings/Diagnosis:</span>
+              <input type="text" formControlName="clinicalFinding">
+            </div>
+          </div>
+          <div class="physican-signature">
+            <div>
+              <div class="signature">
+                <span>Physician Signature:</span>
+                <input type="text" formControlName="physicianSignature">
+              </div>
+              <div class="ordered-date">
+                <span>Date:</span>
+                <input type="date" formControlName="physicianSignatureDate">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="table-container">
+      <div class="table">
+        <div class="table-row">
+          <div class="inner-div">
+            <div class="inner-div1">
+              <span>x</span>
+            </div>
+            <div class="inner-div2" style=" display: flex;
+                  justify-content: center;
+                  align-items: center; background-color: #562b32;">
+              <span style="color: white;">MRI</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="BrainW_Ocontrast"></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Brain W/O contrast</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="BrainW_W_Ocontrast"></mat-checkbox>
+
+            </div>
+            <div class="inner-div2">
+              <span>Brain W+W/O contrast</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="BrainW_IACorPituitaryW_W_Ocontrast"></mat-checkbox>
+
+            </div>
+            <div class="inner-div2">
+              <span>Brain W/IAC or Pituitary W+W/O contrast</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="OrbitsW_W_O"></mat-checkbox>
+
+            </div>
+            <div class="inner-div2">
+              <span>Orbits W+W/O</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="AbdomenW_Ocontrast"></mat-checkbox>
+
+            </div>
+            <div class="inner-div2">
+              <span>Abdomen W/O contrast</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="AbdomenW_W_Ocontrast"></mat-checkbox>
+
+            </div>
+            <div class="inner-div2">
+              <span>Abdomen W+W/O contrast</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="PelvisW_O"></mat-checkbox>
+
+            </div>
+            <div class="inner-div2">
+              <span>Pelvis W/O</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="ShoulderW_Ocontrast"></mat-checkbox>
+
+            </div>
+            <div class="inner-div2">
+              <span>Shoulder W/O contrast &nbsp; &nbsp; &nbsp; R &nbsp; &nbsp; &nbsp; &nbsp; L </span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="WristW_Ocontrast"></mat-checkbox>
+
+            </div>
+            <div class="inner-div2">
+              <span>Wrist W/O contrast &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; R &nbsp; &nbsp; &nbsp;
+                &nbsp;
+                L </span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="KneeW_Ocontrast"></mat-checkbox>
+
+            </div>
+            <div class="inner-div2">
+              <span>Knee W/O contrast &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; R &nbsp; &nbsp; &nbsp;
+                &nbsp;
+                L </span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="AnkleW_Ocontrast"></mat-checkbox>
+
+            </div>
+            <div class="inner-div2">
+              <span>Ankle W/O contrast&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; R &nbsp; &nbsp; &nbsp;
+                &nbsp;
+                L </span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="FootW_Ocontrast"></mat-checkbox>
+
+            </div>
+            <div class="inner-div2">
+              <span>Foot W/O contrast&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; R &nbsp; &nbsp;
+                &nbsp;
+                &nbsp; L </span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="CervicalSpineW_Ocontrast"></mat-checkbox>
+
+            </div>
+            <div class="inner-div2">
+              <span>Cervical Spine W/O contrast</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="CervicalSpineW_W_O"></mat-checkbox>
+
+            </div>
+            <div class="inner-div2">
+              <span>Cervical Spine W+W/O</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="ThoracicSpineW_Ocontrast"></mat-checkbox>
+
+            </div>
+            <div class="inner-div2">
+              <span>Thoracic Spine W/O contrast</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="ThoracicSpineW_W_O"></mat-checkbox>
+
+            </div>
+            <div class="inner-div2">
+              <span>Thoracic Spine W/+W/O</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="LumbarSpineW_Ocontrast"></mat-checkbox>
+
+            </div>
+            <div class="inner-div2">
+              <span>Lumbar Spine W/O contrast</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="LumbarSpineW_W_O"></mat-checkbox>
+
+            </div>
+            <div class="inner-div2">
+              <span>Lumbar Spine W+W/O</span>
+            </div>
+          </div>
+          <div class="inner-div-others">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="others_MRI"></mat-checkbox>
+
+            </div>
+            <div class="inner-div2">
+              <span>others</span>
+            </div>
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="inner-div">
+            <div class="inner-div1">
+              <span>x</span>
+            </div>
+            <div class="inner-div2" style=" display: flex;
+                  justify-content: center;
+                  align-items: center; background-color: #562b32;">
+              <span style="color: white;">CT</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName='BrainW_OcontrastCt'></mat-checkbox>
+
+            </div>
+            <div class="inner-div2">
+              <span>Brain W/O contrast</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName='BrainW_W_OcontrastCt'></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Brain W+W/O contrast</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName='Sinus_specifyprotocol'></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Sinus (specify protocol)</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName='TemporalBones'></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Temporal Bones</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName='OrbitW_W_Ocontrast'></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Orbit W+W/O contrast</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName='SoftTissueNeckW_W_Ocontrast'></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Soft Tissue Neck W+W/O contrast</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName='ChestW_contrast'></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Chest W/ contrast</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName='ChestW_W_Ocontrast'></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Chest W+W/O contrast</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName='AbdomenW_OcontrastCt'></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Abdomen W/O contrast</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName='AbdomenW_W_OcontrastCt'></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Abdomen W+W/O contrast</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName='PelvisW_Ocontrast'></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Pelvis W/O contrast</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName='PelvisW_W_Ocontrast'></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Pelvis W+W/O contrast</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName='AbdomenPelvisW_Ocontrast'></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Abdomen & Pelvis W/O contrast</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName='AbdomenPelvisW_W_Ocontrast'></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Abdomen & Pelvis W+W/O contrast</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName='RenaiStoneProtocol'></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Renai Stone Protocol</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName='CervicalSpine'></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Cervical Spine</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName='ThoracicSpine'></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Thoracic Spine</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName='LumbarSpine'></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Lumbar Spine</span>
+            </div>
+          </div>
+
+          <div class="inner-div-others">
+            <div class="inner-div1">
+              <mat-checkbox formControlName='CtOthers'></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Others</span>
+            </div>
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="inner-div">
+            <div class="inner-div1">
+              <span>x</span>
+            </div>
+            <div class="inner-div2" style=" display: flex;
+                  justify-content: center;
+                  align-items: center; background-color: #562b32;">
+              <span style="color: white;">ULTRASOUND</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="Abdomen"></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Abdomen</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="Gallbladder"></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Gallbladder</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="Liver"></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Liver</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="PelvicTransabdominal"></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Pelvic (Transabdominal)</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="PelvicWTransvaginal"></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Pelvic W/ Transvaginal</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="RUQAbdominal"></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>RUQ Abdominal</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="TesticularScrotum"></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Testicular/Scrotum</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="Thyroid"></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Thyroid</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="RenalRenalDoppler"></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Renal + Renal Doppler</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="CarotidDoppler"></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Carotid Doppler</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="ArterialDoppler"></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Arterial Doppler
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+            </div>
+            <div class="inner-div2-upper">
+              <span>Upper&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lower</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="VenousDoppler"></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Venous Doppler
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+            </div>
+            <div class="inner-div2-upper">
+              <span>Upper&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lower</span>
+            </div>
+          </div>
+          <div class="inner-div">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="FNABiopsyThyroid"></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>FNA Biopsy (Thyroid)</span>
+            </div>
+          </div>
+          <div class="inner-div-others3">
+            <div class="inner-div1">
+              <mat-checkbox formControlName="others_Ultrasound"></mat-checkbox>
+            </div>
+            <div class="inner-div2">
+              <span>Other</span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-container">
+      <div class="footer">
+        <div class="row-one">
+          <div class="cloum-one">
+            <div class="inner-div">
+              <div class="inner-div1" style="border: none;">
+                <span>x</span>
+              </div>
+              <div class="inner-div2" style=" display: flex;
+                  justify-content: center;
+                  align-items: center; background-color: #562b32;border-top: none;border-left: 1px solid gray;">
+                <span style="color: white;">MRA</span>
+              </div>
+            </div>
+            <div class="inner-div">
+              <div class="inner-div1">
+              </div>
+              <div class="inner-div2">
+                <span>Head W/O contrast/Cow</span>
+              </div>
+            </div>
+            <div class="inner-div" style="height: 38%;">
+              <div class="inner-div1">
+              </div>
+              <div class="inner-div2">
+                <span>Neck W/O contrast</span>
+              </div>
+            </div>
+          </div>
+          <div class="cloum-two">
+            <div class="inner-div">
+              <div class="inner-div1" style="border-bottom: 1px solid gray;">
+                <span>x</span>
+              </div>
+              <div class="inner-div2" style=" display: flex;
+                  justify-content: center;
+                  align-items: center; background-color: #562b32;">
+                <span style="color: white;">ARTHROGRAM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-two">
+          <div class="table">
+            <div class="table-first-row">
+              <div class="inner-div1">
+                <span>x</span>
+              </div>
+              <div class="inner-div2" style="background-color: #562b32;">
+                <div>
+                  <span>ROUTINE X-RAYS</span>
+                  <span>specify producer and number of views. if not specified, X-Rays will i have 3
+                    Views</span>
+                </div>
+              </div>
+            </div>
+            <div class="table-second-row">
+              <div class="inner-div1">
+              </div>
+              <div class="inner-div2">
+                <div class="div-two-input">
+                  <span>Cervical:</span><input type="text" formControlName="cericval">
+                </div>
+                <div class="div-two-input"> <span>Lumber:</span><input type="text" formControlName="lumber"></div>
+                <div class="div-two-input"> <span> Thoracic:</span><input type="text" formControlName="thoracic"></div>
+
+              </div>
+            </div>
+            <div class="table-second-row" style="border-bottom: 1px solid gray;">
+              <div class="inner-div1">
+              </div>
+              <div class="inner-div2">
+                <div class="div-two-input">
+                  <span>Knee &nbsp; R | L</span>
+                </div>
+                <div class="div-two-input"> <span>KUB</span></div>
+                <div class="div-two-input"> <span> Chest:</span><input type="text" formControlName="chest"></div>
+
+              </div>
+            </div>
+            <div class="table-fourth-row">
+              <span>Others:</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 style="text-align: center;color: #562b32;">STAT CREATININE AVAILABLE ON SITE</h2>
+  </div>
+  <button mat-button (click)="onSubmit()">Submit</button>
+</form>

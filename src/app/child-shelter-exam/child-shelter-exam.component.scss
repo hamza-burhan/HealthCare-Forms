@@ -1,0 +1,208 @@
+:host ::ng-deep{
+    .mat-checkbox-checked.mat-accent .mat-checkbox-ripple .mat-ripple-element {
+      opacity: 0.03 !important;
+      background-color: #7d7d7d!important;
+    }
+  
+    .mat-checkbox-checked.mat-accent .mat-checkbox-background,.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+      background-color: #7d7d7d;
+    }
+  }
+  input[type="text"]{
+    font-size: 18px;
+  }
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  .appointment-heading {
+    width: 100%;
+    height: 100px;
+    display: flex;
+
+    .heading-container {
+      width: 50%;
+      height: 30%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 60px;
+          margin-left: 140px;
+
+    }
+  }
+  .divider {
+    width: 80%;
+    height: 20px;
+    background-color: #7d7d7d;
+  }
+  .appointment-from-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    .appointment-from {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      .appointment-checkbxes {
+        height: 100%;
+        width: 30%;
+
+        div {
+          display: flex;
+          flex-direction: column;
+
+          width: 100%;
+          height: 100%;
+          .mat-checkbox {
+            margin-top: 5px;
+          }
+          div {
+            display: flex;
+            flex-direction: row;
+            margin-top: 5px;
+
+            input {
+              width: 80%;
+              border: none;
+              border-bottom: 1px solid gray;
+              outline: none;
+              height: 30%;
+              margin-top: 1px;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+      .appointment-input-container {
+        height: 100%;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        .appointment-input {
+          margin-top: 5px;
+          width: 80%;
+          height: 80%;
+          margin-left: 190px;
+          div {
+            display: flex;
+            flex-direction: row;
+            margin-top: 5px;
+            width: 90%;
+            input {
+              width: 30%;
+              border: none;
+              border-bottom: 1px solid gray;
+              outline: none;
+              height: 30%;
+              margin-top: 1px;
+              background-color: transparent;
+            }
+          }
+          .physician-name {
+            display: flex;
+            flex-direction: row;
+            margin-top: 5px;
+            width: 90%;
+            margin-top: 40px;
+            input {
+              width: 68%;
+              border: none;
+              border-bottom: 1px solid gray;
+              outline: none;
+              height: 30%;
+              margin-top: 1px;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+  .customer-info-container {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .customer-info {
+      width: 80%;
+      height: 70%;
+      margin-top: 5px;
+      .inputs {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        .input-colum-one {
+          width: 30%;
+          height: 100%;
+          div {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            input {
+              margin-top: 20px;
+              border: none;
+              border-bottom: 1px solid gray;
+              outline: none;
+              background: transparent;
+            }
+          }
+        }
+        .input-colum-two {
+          width: 70%;
+          height: 100%;
+          display: flex;
+          .inputs-section-two {
+            display: flex;
+            flex-direction: column;
+            margin-left: 200px;
+            width: 80%;
+            height: 100%;
+            .divider {
+              width: 80%;
+              height: 20px;
+              background-color: #7d7d7d;
+            }
+            div {
+              width: 100%;
+              height: 6%;
+              display: flex;
+              flex-direction: row;
+              margin-top: 7px;
+              span {
+                margin-top: 3px;
+              }
+              input {
+                border: none;
+                border-bottom: 1px solid gray;
+                outline: none;
+                background: transparent;
+                height: 20px;
+                width: 70%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footers-input {
+      width: 80%;
+      height: 30%;
+      div {
+        input {
+          width: 40%;
+          border: none;
+          border-bottom: 1px solid gray;
+          outline: none;
+          margin-top: 1px;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,487 @@
+<form [formGroup]="profileForm">
+  <div class="main-container">
+    <div class="header">
+      <div class="header-adddres">
+        <div class="header-heading">
+          <h2>PHYSICIAN ORDER FORM</h2>
+        </div>
+        <div class="address-container">
+          <div class="addres-row">
+            <div>
+              <span class="span-1">The Rose | Southeast</span><br>
+              <span>
+                12700 N. Featherwood<br>
+                Suite 260<br>
+                Houston TX 77034<br>
+                281-484-4708 <span class="colur-text">Main</span><br>
+                281-484-5626 <span class="colur-text">Fax</span><br>
+              </span>
+            </div>
+          </div>
+          <div class="addres-row">
+            <div>
+              <span class="span-1">The Rose | Galleria </span><br>
+              <span>
+                6575 West Loop South<br>
+                Suite 260<br>
+                Bellaire, TX 77401<br>
+                281-484-4708 <span class="colur-text">Main</span><br>
+                713-668-3173 <span class="colur-text">Fax</span><br>
+              </span>
+            </div>
+          </div>
+          <div class="addres-row">
+            <div>
+              <span class="span-1">Make your appointment today</span><br>
+              <span>
+                281-484-4708 <span class="colur-text">Main number</span><br><br>
+                <span class="span-1"> For online scheduling</span><br>
+                <a style="color: black;" href="https://therose.org/appointment-request/">
+                  https://therose.org/appointment</a><br>
+
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="logo-contaniner">
+        <div class="logo-des">
+          <img src="../../assets/Rose.png">
+        </div>
+      </div>
+    </div>
+    <div class="form-container">
+      <div class="information-heading">
+        <div>
+          <h3>PATIENT INFORMATION</h3>
+        </div>
+
+      </div>
+      <div class="form-data-container">
+        <div class="form-data">
+          <div class="form-inner-data">
+            <div class="input-container">
+              <h4 style="margin-top: 32px;">Patient Name:</h4>
+              <input class="patient-name" type="text" formControlName="PatientName">
+              <h4 style="margin-top: 32px;">Date:</h4>
+              <input type="date" class="patient-date" formControlName="Date">
+            </div>
+            <div class="input-container">
+              <h4 style="margin-top: 32px;">Phone:</h4>
+              <input class="patient-name" type="text" formControlName="Phone">
+              <h4 style="margin-top: 32px;">Birthdate:</h4>
+              <input type="date" class="patient-date" formControlName="birthDate">
+            </div>
+            <div class="input-container">
+              <h4 style="margin-top: 32px;">Previous Mammogram(s) Year(s):</h4>
+              <input style=" margin-left: 15px ;" class="Mammogram-Year" type="date" formControlName="MammogramYear">
+              <h4 style="margin-top: 32px; margin-left: 40px;">Location(s):
+              </h4>
+              <input type="tex" class="patient-date" style="width: 65%;font-size: 18px ;" formControlName="Location">
+            </div>
+            <div class="input-container">
+              <h4 style="margin-top: 32px;">Diagnosis (Dx):</h4>
+              <input class="patient-name" type="text" formControlName="Diagnosis">
+            </div>
+
+          </div>
+        </div>
+        <div class="form-checkbox">
+          <div class="checkbox-inner">
+            <div style="margin-left: 20px;">
+              <mat-checkbox formControlName="breastFeeding"><span>Breastfeeding</span></mat-checkbox>
+              <br>
+              <mat-checkbox formControlName="pregnant"><span>Pregnant</span></mat-checkbox><br>
+              <mat-checkbox formControlName="breastImplants" (change)="handleSubCheckboxes($event.checked)"><span>Breast Implants</span></mat-checkbox>
+
+              <div>
+                <mat-checkbox formControlName="breastImplantsSaline"><span>Saline</span></mat-checkbox><br>
+                <mat-checkbox formControlName="breastImplantsSilicone"><span>Silicone</span></mat-checkbox>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="examination-request">
+      <div class="examination-request-heading">
+        <div>
+          <h3>BREAST EXAMINATION REQUEST</h3>
+        </div>
+
+      </div>
+      <div class="two-section">
+        <div class="section-one">
+          <div>
+            <mat-checkbox class="mat-checkbox" formControlName="screeningMammogram"><span class="span-2">Screening
+                Mammogram with additional views and/or<br>
+                Ultrasound if necessary for inclusive Mammogram</span></mat-checkbox>
+
+            <mat-checkbox class="mat-checkbox" formControlName="diagnosticMammogram">Diagnostic Mammogram with
+              Ultrasound if necessary</mat-checkbox>
+            <mat-checkbox class="mat-checkbox" formControlName="breastUltrasound">Breast Ultrasound</mat-checkbox>
+
+          </div>
+        </div>
+        <div class="section-two">
+          <div>
+            <mat-checkbox class="mat-checkbox" formControlName="denseBreast"><span class="span-2">Breast Ultrasound for
+                Dense
+                Breast</span></mat-checkbox>
+
+            <mat-checkbox class="mat-checkbox" formControlName="breastBiopsy">Breast Biopsy with post procedure
+              Mammogram if needed</mat-checkbox>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="reason-procdure-container">
+      <div class="reason-procdure">
+        <div class="procedure-heading">
+          <div>
+            <h3>Select Reason for Procedure</h3>
+          </div>
+        </div>
+        <div class="procedure-checkbox-inner">
+          <div class="checkbox-setion-1">
+            <mat-checkbox formControlName="breastMass">Breast Mass </mat-checkbox>
+            <mat-checkbox formControlName="breastCyst">Breast Cyst</mat-checkbox>
+          </div>
+          <div class="checkbox-setion-1">
+            <mat-checkbox formControlName="abnormalMammogram">Abnormal Mammogram</mat-checkbox>
+            <mat-checkbox formControlName="familyHistoryofBreastCancer">Family History of Breast Cancer</mat-checkbox>
+          </div>
+          <div class="checkbox-setion-1">
+            <mat-checkbox formControlName="breastPain">Breast Pain </mat-checkbox>
+            <mat-checkbox formControlName="nippleDischarge">Nipple Discharge: </mat-checkbox>
+          </div>
+          <div class="checkbox-setion-1">
+            <mat-checkbox formControlName="personalHistoryCancer">Personal History of Breast Cancer</mat-checkbox>
+            <mat-checkbox formControlName="examinationRequestProcedureOthers">Other</mat-checkbox>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="concern-site">
+      <div class="concern-site-heading">
+        <div>
+          <h3>MARK SITES OF CONCERN</h3>
+        </div>
+
+      </div>
+      <div class="concern-site-container">
+        
+        <div #screen id="imageContainer" class="image-section">
+          <div id="download">
+            <img #canvas>
+            <a #downloadLink></a>
+          </div>
+          <img src="../../assets/Breast-Image.png" id="humanBodyImage">
+        </div>
+        <div class="div2">
+          <mat-checkbox formControlName="Intervation"><span style="color: #ee2374;">Intervention</span></mat-checkbox>
+          <p>Procedures may include the following as clinically<br>
+            indicated by diagnostic studies:</p>
+          <li> Cyst aspiration</li>
+          <li> Fine needle aspiration biopsy</li>
+          <li>Ultrasound-guided core biopsy</li>
+          <li>Stereo-guided core biopsy</li>
+          <li>Wire localization for surgical biopsy</li>
+          <li>Ductogram</li>
+        </div>
+      </div>
+    </div>
+    <div class="bone-density-container">
+      <div class="bone-density-heading">
+        <div>
+          <h3>BONE DENSITY REQUEST</h3>
+        </div>
+
+      </div>
+      <div style="margin-left: 30px;margin-top: 10px;">
+        <mat-checkbox formControlName="boneDensityTest">Bone density test: Hip and Spine. </mat-checkbox>
+      </div>
+      <div class="reason-procdure-container">
+        <div class="reason-procdure">
+          <div class="procedure-heading">
+            <div>
+              <h3>Select Reason for Procedure</h3>
+            </div>
+
+          </div>
+
+          <div class="procedure-checkbox-inner">
+            <div class="checkbox-setion-1">
+              <mat-checkbox formControlName="OsteopinaM85_89">Osteopenia M85.89 </mat-checkbox>
+              <mat-checkbox formControlName="OsteoprosisM81">Osteoporosis M81.0</mat-checkbox>
+              <mat-checkbox formControlName="asymptomaticMenopausalZ78">Asymptomatic menopausal site Z78.0
+              </mat-checkbox>
+            </div>
+            <div class="checkbox-setion-1">
+              <mat-checkbox formControlName="hormonal_ContracepativeZ79">Long-term, current hormonal contraceptives
+                Z79.3</mat-checkbox>
+              <mat-checkbox formControlName="menoPauselN95_9">Unspecified menopausal or premenopausal N95.9
+              </mat-checkbox>
+              <mat-checkbox formControlName="menoPausalN95_8">Other specified menopausal or premenopausal N95.8
+              </mat-checkbox>
+            </div>
+            <div class="checkbox-setion-1">
+              <mat-checkbox formControlName="boneDensityOthers">others </mat-checkbox>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="physician-container">
+      <div class="physician-heading">
+        <div>
+          <h3>REFERRING PHYSICIAN</h3>
+        </div>
+
+      </div>
+      <div class="physician-data-container">
+        <div class="physician-data">
+          <div class="physician-inner-data">
+            <div class="input-container">
+              <h4 style="margin-top: 32px;">Referring Physician Name:</h4>
+              <input class="patient-name" type="text" formControlName="ReferringPhysician">
+            </div>
+            <div class="input-container">
+              <h4 style="margin-top: 32px;">Facility:</h4>
+              <input class="patient-name" type="text" formControlName="Facility">
+              <h4 style="margin-top: 32px;">NPI Number:</h4>
+              <input type="text" class="patient-date" formControlName="NPINumber">
+            </div>
+            <div class="input-container">
+              <h4 style="margin-top: 32px;">Phone:</h4>
+              <input class="Mammogram-Year" type="text" formControlName="physicanPhone">
+              <h4 style="margin-top: 32px;">Fax:
+              </h4>
+              <input type="text" class="patient-date" style="width: 20%;" formControlName="Fax">
+            </div>
+            <div class="input-container">
+              <h4 style="margin-top: 32px;">Referring Physician Signature: (required)</h4>
+              <input class="patient-name" type="text" formControlName="PhysicianSignature">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="instruction-container">
+      <div class="instruction-heading">
+        <h1>PATIENT INSTRUCTIONS</h1>
+      </div>
+      <div class="instruction-detail">
+        <p>Please allow one (1) hour<br>
+          for your mammogram appointment</p>
+      </div>
+
+    </div>
+    <div class="instructions-points">
+      <p>1. &nbsp; Do not wear lotions powder or deodorants on the day of your appointments </p>
+      <p>2. &nbsp; Please wear two-piece clothing for convenience and comfort </p>
+      <p>3. &nbsp; For a biopsy please don't take any asprin for Advil for atleast seven (7) days before your
+        appointment
+      </p>
+      <p>4. &nbsp; For bon density testing please don't wear any metal, i.e zippers or buttons </p>
+      <p>4. &nbsp; please don't bring a child to who requires supervision while you are being examined </p>
+      <p>4. &nbsp; please bring the following with you to your appointment : </p>
+      <div>
+        <mat-checkbox formControlName="refrealForm">This referral form from your physician</mat-checkbox>
+        <mat-checkbox formControlName="lastMensturalPeriod">The dates of your last menstrual period, or year of
+          hysterectomy (<input type="date" formControlName="dateofLastMenstrual" class="custom-input">).</mat-checkbox>
+        <div class="break-container">
+          <mat-checkbox formControlName="priorImage"></mat-checkbox>
+          <div class="break">Prior images and reports from the two most recent mammograms and/or ultrasounds for
+            comparison purposes,
+            or the address and phone number of the facility where they can be obtained. (This will allow The Rose to
+            quickly compare to your new digital images).Your results may be delayed if we must wait for your prior
+            images
+            and reports to arrive.<span class="colur-text">Prior images and reports are mandatory for diagnostic
+              appointments.</span> </div>
+        </div>
+        <div class="break-container">
+          <mat-checkbox formControlName="priorBoneDensity"></mat-checkbox>
+          <div class="break">Any prior bone density test results, or the address and phone number of the facility, or
+            physician, where they
+            can be obtained.</div>
+        </div>
+
+      </div>
+    </div>
+    <div style="margin-top: 20px;" class="instruction-container">
+      <div class="instruction-heading">
+        <h1>INSURANCE ACCEPTED</h1><br>
+      </div>
+      <div class="instruction-detail">
+        <p>Don’t see your insurance listed? </p><br>
+        <p style="color: black; margin-top: -35px;">Call our Business Office at 281-481-3208.</p>
+
+      </div>
+
+    </div>
+    <div class="insurrance-container">
+      <div class="insurrance-rows">
+        <div>
+          <p>Accountable Health Plans</p>
+          <h4 style="color: #ee2374;">ACA – Affordable Care Act:</h4>
+          <li>Aetna</li>
+          <li>Allied</li>
+          <li>Ambetter <span class="colur-text">*Value/Virtual with Referral</span></li>
+          <li>BCBS-HMO/PPO</li>
+          <li>Cigna</li>
+          <li>Community Health Choice</li>
+          <li>Molina Healthcare</li>
+          <li>Pan American</li>
+          <li>United Healthcare Compass, Balanced, and Plus</li>
+          <h4 style="color: #ee2374;">Insurances Accepted:</h4>
+          <li>Admar/Med Network</li>
+          <li>Administrative Concepts</li>
+          <li>Aetna<span class="colur-text">– all plans except Memorial Hermann</span> </li>
+          <span class="colur-text">
+            <li>Aetna Memorial Hermann Accountable Care only</li>
+          </span>
+          <li>HCA <span class="colur-text">(can be seen with authorization)</span></li>
+          <span class="colur-text">
+            <li>Kelsey-Seybold</li>
+          </span>
+          <li>Aetna Medicare Advantage</li>
+          <li>Affiliated Healthcare/PHN</li>
+          <li>Aliera</li>
+          <li>Allied</li>
+          <li>Allwell</li>
+          <li>Amerigroup (including Children’s Medicaid)</li>
+          <li>Anthem</li>
+          <li>Beechstreet A Multiplan Network</li>
+          <li>Blue Choice</li>
+          <li>Blue Cross & Blue Shield with Medicare Advantage HMO</li>
+          <li>Blue Essentials</li>
+          <li>Blue Premier</li>
+          <li>Boon Chapman</li>
+          <li>Bright Healthcare</li>
+          <li>Care Improvement PPO</li>
+          <li>CCN</li>
+          <li>Champ VA</li>
+          <li>Cigna <span class="colur-text">– all plans except Kelsey Seybold</span></li>
+          <li>Community Health Choice</li>
+          <li>Coventry Healthcare – GEHA only</li>
+          <li>Devoted Health</li>
+          <li>Evercare of Texas</li>
+          <li>Fiesta</li>
+          <li>First Health</li>
+          <li>Friday</li>
+
+        </div>
+      </div>
+      <div class="insurrance-rows">
+        <ul class="insurance-list">
+          <li>Friendswood ISD</li>
+          <li>Galaxy Network</li>
+          <li>GPA – Group and Pensions Administrators</li>
+          <li>Great West part of Cigna</li>
+          <li>Healthnet Pro</li>
+          <li>Healthmedpro</li>
+          <li>HealthSmart ACCEL, Preferred and Payers Organization (HPO)</li>
+          <li>HHPO - PPO Next</li>
+          <li>HMO Blue (with referral)</li>
+          <li>Humana - PPO, HMO & MMP <span class="colur-text">- Not HMOx</span></li>
+          <li>Indemnity - Non-contracted</li>
+          <li>Integranet IPA</li>
+          <li>Medcorp Southwest</li>
+          <li>Medicaid includes * HTW Healthy Texas Women's Program</li>
+          <li>Medicaid HMO Plans:</li>
+          <ul>
+            <li>Amerigroup/Americaid/Amerihealth Star+Plus</li>
+            <li>Community Health Choice Star program</li>
+            <li>CHIP</li>
+            <li>Evercare Star / Star+Plus</li>
+            <li>Molina Healthcare MCD/CHIP</li>
+            <li>Texas Health Network / PCCM</li>
+            <li>United Healthcare Community Health Plan</li>
+            <li>Star & StarPlus</li>
+            <li>Superior Medicaid</li>
+          </ul>
+          <li>Medical Control - HHPO</li>
+          <li>Medicare HMO Plans:</li>
+          <ul>
+            <li>Superior Medicare</li>
+          </ul>
+          <li>Medicare Traditional</li>
+          <li>Medicare Advantage Plans:</li>
+          <ul>
+            <li>Advantra Freedom PPO <span class="colur-text">Not HMO</span></li>
+            <li>Aetna PPO/HMO</li>
+            <li>Amerigroup-Amerivantage HMO</li>
+            <li>AARP-Medicare Complete</li>
+            <li>BC/BS of Texas: Blue Medicare PPO/HMO</li>
+            <li>Care Improvement Plus</li>
+            <li>Community Health Choice, Bronze, Silver, Gold</li>
+            <li>Evercare of Texas, LLC : Plan MH</li>
+            <li>Health Med Pearl</li>
+            <li>Health Net Pro</li>
+            <li>Humana Ins Co: Humana Gold Choice, Humana Choice PPO</li>
+            <li>Molina</li>
+            <li>Secure Horizons Medicare Replacement</li>
+            <li>SelectCare of Texas, LLC: Texan Plus, Texan</li>
+          </ul>
+        </ul>
+
+      </div>
+      <div class="insurrance-rows">
+        <ul class="insurance-list">
+          <li>Complete, Texan Value</li>
+          <li>Texas HealthSpring: Advantage, Metro Advantage Plus, True Choice</li>
+          <li>United Healthcare:</li>
+          <ul>
+            <li>Well Care</li>
+          </ul>
+          <li>Medicare Railroad</li>
+          <li>MetLife</li>
+          <li>Molina</li>
+          <li>Multiplan</li>
+          <li>MyBlue Health</li>
+          <li>NAPP</li>
+          <li>National Preferred Provider Network (NPPN)</li>
+          <li>Pacificare</li>
+          <li>PHCS</li>
+          <li>Point Comfort</li>
+          <li>PPC – Patient Physician Cooperative</li>
+          <li>PPONext - HHPO</li>
+          <li>Preferred Plan of Texas</li>
+          <li>Premier/HAS</li>
+          <li>Pronet</li>
+          <li>Prudential</li>
+          <li>Randalls</li>
+          <li>Renaissance - Texas Health Spring</li>
+          <li>Secure Horizons</li>
+          <li>Select Care - Texans Plus</li>
+          <li>TX Annual Conf. of United Methodist Churches</li>
+          <li>Texas True Choice - Beechstreet</li>
+          <li>Texas Municipal League (TML)</li>
+          <li>TriCare Standard</li>
+          <li>TriCare Prime<span class="colur-text"> with Authorization only</span></li>
+          <li>*TriWest for VA patients</li>
+          <li>TRS Care – Aetna <span class="colur-text">Not in network TRS Active Care group 866344</span> </li>
+          <li>UMR – United Medical Resources</li>
+          <li>Unicare - Performance, Classic, PPO, HMO</li>
+          <li>United Healthcare</li>
+          <li>United Healthcare Compass, Balanced, and Plus (Marketplace/ACA)</li>
+          <li>United Healthcare Community Plan Star & Star Plus, MMP</li>
+          <li>United Health One</li>
+          <li>USA Managed Care</li>
+          <li>Van Lang IPA</li>
+          <li>WellCare</li>
+          <li>WellMED AARP</li>
+        </ul>
+
+      </div>
+    </div>
+    
+  </div>
+  <button mat-button color="primary" (click)="submit()">Submit</button>
+</form>

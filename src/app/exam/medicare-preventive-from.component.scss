@@ -1,0 +1,566 @@
+:host::ng-deep {
+  .mat-checkbox-layout .mat-checkbox-label {
+    white-space: break-spaces;
+  }
+  // :host ::ng-deep{
+  .mat-checkbox-checked.mat-accent .mat-checkbox-ripple .mat-ripple-element {
+    opacity: 0.03 !important;
+    background-color: black !important;
+  }
+
+  .mat-checkbox-checked.mat-accent .mat-checkbox-background,
+  .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: black;
+  }
+  // }
+}
+[type="text"] {
+  font-size: 18px !important;
+}
+.button-on-top {
+  height: 1px;
+}
+.main-container {
+  .medicare-form-header {
+    display: block;
+    width: 50%;
+    height: 100px;
+    margin-top: 40px;
+    margin-left: 70px;
+    h1 {
+      font-weight: 500;
+    }
+    input {
+      border: none;
+      outline: none;
+      border-bottom: 1px solid black;
+      background-color: transparent;
+      width: 20%;
+    }
+    span {
+      font-weight: 500;
+    }
+  }
+  .intial-form-conatiner {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    .intial-form {
+      width: 90%;
+      height: 100%;
+      border: 1px solid black;
+      border-bottom: none;
+      display: flex;
+      flex-direction: column;
+      .row-one {
+        width: 100%;
+        height: 15%;
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        div {
+          width: 25%;
+          height: 100%;
+          border-right: 1px solid black;
+          display: flex;
+        }
+      }
+      .row-two {
+        width: 100%;
+        height: 13%;
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        div {
+          width: 37.5%;
+          height: 100%;
+          border-right: 1px solid black;
+          display: flex;
+          flex-direction: column;
+          input {
+            width: 70%;
+            height: 30px;
+            margin-left: 88px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+          }
+          span {
+            margin-left: 7px;
+          }
+        }
+      }
+      .row-four {
+        width: 100%;
+        height: 10%;
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        div {
+          width: 75%;
+          height: 100%;
+          border-right: 1px solid black;
+          display: flex;
+          flex-direction: column;
+          input {
+            width: 70%;
+            height: 30px;
+            margin-left: 88px;
+            border: none;
+            outline: none;
+            margin-top: 30px;
+            background-color: transparent;
+          }
+
+          span {
+            margin-left: 7px;
+          }
+          .sex-design {
+            display: flex;
+            flex-direction: row;
+            margin-left: 7px;
+            margin-top: 20px;
+            border: none;
+            span {
+              margin-left: -5px;
+            }
+          }
+        }
+      }
+      .row-six {
+        width: 100%;
+        height: 15%;
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        div {
+          width: 12.47%;
+          height: 100%;
+          border-right: 1px solid black;
+          display: flex;
+          flex-direction: column;
+          input {
+            width: 80%;
+            height: 30px;
+            border: none;
+            outline: none;
+            margin-top: 20px;
+            background-color: transparent;
+          }
+
+          span {
+            margin-left: 7px;
+          }
+        }
+      }
+      .row-seven {
+        width: 100%;
+        height: 5.2%;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid black;
+        span {
+          margin: 0px;
+        }
+        .mat-checkbox {
+          margin-left: 7px;
+        }
+      }
+    }
+  }
+  .social-history-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    .social-history {
+      margin-top: 30px;
+      width: 90%;
+      height: 90%;
+      border: 1px solid black;
+      .social-row-one {
+        height: 7%;
+        border-bottom: 1px solid black;
+        width: 100%;
+        background-color: #dcddde;
+        span {
+          font-weight: 600;
+        }
+      }
+      .social-row-two {
+        height: 7%;
+        border-bottom: 1px solid black;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        div {
+          width: 97%;
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          margin-left: 10px;
+          .checkboxes {
+            width: 14%;
+            height: 100%;
+
+            input {
+              width: 70%;
+              border: none;
+              outline: none;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+      .social-row-three {
+        height: 20%;
+        border-bottom: 1px solid black;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        div {
+          width: 97%;
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          margin-left: 10px;
+          .checkboxes {
+            width: 14%;
+            height: 100%;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+
+            input {
+              width: 70%;
+              // height: 30px;
+              // margin-left: 88px;
+              border: none;
+              outline: none;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+      .social-row-four {
+        height: 7%;
+        border-bottom: 1px solid black;
+        width: 100%;
+        // background-color: #dcddde;
+        display: flex;
+        flex-direction: row;
+        .diet-notes {
+          width: 50%;
+          height: 100%;
+          border-right: 1px solid black;
+          display: flex;
+          flex-direction: row;
+          input {
+            width: 70%;
+            margin-left: 10px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+          }
+        }
+        .Caffine {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          div {
+            width: 97%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-left: 10px;
+            .checkboxes {
+              width: 20%;
+              height: 100%;
+            }
+          }
+        }
+      }
+      .social-row-five {
+        height: 30%;
+        border-bottom: 1px solid black;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        div {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          width: 100%;
+
+          .div-inner {
+            width: 97%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            margin-left: 10px;
+            .checkboxes {
+              width: 14%;
+              height: 30%;
+              // display: flex;
+              // align-items: center;
+              // justify-content: center;
+              // margin-left: ;
+
+              input {
+                width: 70%;
+                // height: 30px;
+                // margin-left: 88px;
+                border: none;
+                outline: none;
+                background-color: transparent;
+              }
+            }
+          }
+          .lower-div {
+            display: flex;
+            flex-direction: column;
+            height: 70%;
+            margin-top: -40px;
+            justify-content: center;
+            span {
+              margin-left: 10px;
+            }
+            input {
+              width: 90%;
+              margin-left: 10px;
+              border: none;
+              outline: none;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+      .social-row-six {
+        height: 7%;
+        border-bottom: 1px solid black;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        .diet-notes {
+          width: 50%;
+          height: 100%;
+          border-right: 1px solid black;
+          display: flex;
+          flex-direction: row;
+          input {
+            width: 70%;
+            margin-left: 10px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+          }
+        }
+        .Caffine {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          input {
+            width: 70%;
+            margin-left: 10px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+          }
+        }
+      }
+      .social-row-seven {
+        height: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        div {
+          width: 97%;
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          margin-left: 10px;
+          .checkboxes {
+            width: 14%;
+            height: 100%;
+
+            input {
+              width: 70%;
+              border: none;
+              outline: none;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+  .famil-history-container {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    .family-history {
+      width: 90%;
+      height: 95%;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      .family-row-one {
+        height: 15%;
+        width: 100%;
+        background-color: #dcddde;
+        border-bottom: 1px solid black;
+        span {
+          font-weight: 600;
+          margin-left: 7px;
+          width: 10%;
+        }
+      }
+      .family-row-two {
+        height: 9.4%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid black;
+
+        div {
+          width: 9.4%;
+          height: 100%;
+          border-left: 1px solid black;
+          justify-content: center;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .page-1-footer {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    div {
+      width: 90%;
+      height: 90%;
+      display: flex;
+      flex-direction: row;
+      margin-top: 10px;
+      justify-content: space-between;
+      .img {
+        width: 50%;
+        height: 90%;
+        img {
+          width: 100%;
+        }
+      }
+      .img-text {
+        width: 50%;
+        height: 90%;
+        margin-left: 20px;
+        span {
+          margin-top: 38px;
+        }
+      }
+    }
+  }
+  .page-2-header {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    div {
+      width: 90%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      span {
+        margin-top: 6px;
+      }
+      input {
+        border: none;
+        outline: none;
+        margin-left: 7px;
+        background-color: transparent;
+        border-bottom: 1px solid black;
+        height: 80%;
+      }
+    }
+  }
+  .medical-history-container {
+    width: 100%;
+    height: 350px;
+
+    display: flex;
+    justify-content: center;
+    .medical-history {
+      width: 90%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 18px;
+      border: 1px solid black;
+      .medihist-row-one {
+        height: 10%;
+        width: 100%;
+        background-color: #dcddde;
+        border-bottom: 1px solid black;
+        align-items: center;
+        display: flex;
+        span {
+          font-weight: 600;
+          // margin-top: 10px;
+          margin-left: 7px;
+        }
+      }
+      .medihist-row-two {
+        height: 20%;
+        width: 100%;
+        border-bottom: 1px solid black;
+        // align-items: center;
+        display: flex;
+        flex-direction: row;
+        div {
+          width: 20%;
+          border-left: 1px solid black;
+          height: 100%;
+          align-items: center;
+          display: flex;
+          span {
+            font-weight: 500;
+            margin-left: 7px;
+          }
+        }
+      }
+      .medihist-row-multiple {
+        height: 11.6%;
+        width: 100%;
+        border-bottom: 1px solid black;
+        // align-items: center;
+        display: flex;
+        flex-direction: row;
+        div {
+          width: 20%;
+          border-left: 1px solid black;
+          height: 100%;
+          align-items: center;
+          display: flex;
+          input {
+            width: 80%;
+            height: 100%;
+            border: none;
+            background-color: transparent;
+            outline: none;
+          }
+          span {
+            font-weight: 500;
+            margin-left: 7px;
+          }
+        }
+      }
+    }
+  }
+}

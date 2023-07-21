@@ -1,0 +1,531 @@
+[type=text]{
+  font-size: 18px !important;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 270px;
+  .header-adddres {
+    width: 70%;
+    background-color: white;
+    height: 100%;
+    .header-heading {
+      background-color: #ee2374;
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+
+      h2 {
+        margin-left: 40px;
+        color: white;
+      }
+    }
+    .address-container {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      height: 180px;
+      justify-content: center;
+      .addres-row {
+        width: 30%;
+        height: 100%;
+        background-color: white;
+        div {
+          margin-top: 20px;
+        }
+        .span-1 {
+          color: #ee2374;
+          margin-top: 100px;
+        }
+      }
+    }
+  }
+  .logo-contaniner {
+    width: 30%;
+    height: 100%;
+    .logo-des {
+      img {
+        width: 100%;
+        height: 200px;
+        margin-top: 50px;
+      }
+    }
+  }
+}
+.form-container {
+  .information-heading {
+    width: 98%;
+    border-bottom: 2px solid #ee2374;
+    margin-left: 20px;
+    height: 23px;
+
+    div {
+      width: 20%;
+      // display: flex;
+      // align-items: center;
+      background-color: #ee2374;
+      color: white;
+      height: 25px;
+
+      h3 {
+        margin-left: 10px;
+        font-size: small;
+        font-weight: normal;
+      }
+    }
+  }
+  .form-data-container {
+    width: 100%;
+    height: 250px;
+    // background-color: black;
+    display: flex;
+    flex-direction: row;
+    .form-data {
+      width: 80%;
+      height: 100%;
+      // margin-top: -10px;
+      // background-color: aqua;
+      .form-inner-data {
+        width: 97%;
+        margin-left: 20px;
+        // background-color: burlywood;
+        // margin-top: 20px;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        .input-container {
+          width: 100%;
+          height: 25%;
+          display: flex;
+          flex-direction: row;
+          background-color: white;
+          border-bottom: 2px solid black;
+          .patient-name {
+            border: none;
+            margin-top: 28px;
+            width: 70%;
+            background-color: transparent;
+
+            height: 30px;
+            &:focus {
+              outline: none;
+            }
+          }
+          .Mammogram-Year {
+            border: none;
+            margin-top: 28px;
+            background-color: transparent;
+            width: 15%;
+            height: 30px;
+            &:focus {
+              outline: none;
+            }
+          }
+          .patient-date {
+            margin-left: 10px;
+            border: none;
+            margin-top: 27px;
+            background-color: transparent;
+            width: 10%;
+            height: 30px;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+    .form-checkbox {
+      width: 20%;
+      height: 95%;
+      // background-color: red;
+      .checkbox-inner {
+        background-color: #e4e5e7;
+        width: 90%;
+        // margin: 20px;
+        margin-left: 20px;
+
+        height: 100%;
+        // display: flex;
+        // flex-direction: column;
+        mat-checkbox {
+          margin-top: 10px;
+        }
+        div {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
+.examination-request {
+  margin-top: 10px;
+  width: 100%;
+  height: 170px;
+  .examination-request-heading {
+    width: 98%;
+    border-bottom: 2px solid #ee2374;
+    margin-left: 20px;
+    height: 23px;
+
+    div {
+      width: 20%;
+      background-color: #ee2374;
+      color: white;
+      height: 25px;
+
+      h3 {
+        margin-left: 10px;
+        font-size: small;
+        font-weight: normal;
+      }
+    }
+  }
+  .two-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+    .section-one {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin-left: 35px;
+        .mat-checkbox{
+          margin-top: 10px;
+        }
+        .span-2{
+          display:block;
+    width:80%;
+    line-height: 20px;
+    margin-top: 20px;
+    word-wrap:break-word;
+        }
+      }
+    }
+    .section-two {
+      display: flex;
+      width: 50%;
+
+      flex-direction: column;
+      div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin-left: 35px;
+        margin-top: 20px;
+        .mat-checkbox{
+          margin-top: 10px;
+        }
+        .span-2{
+          display:block;
+    width:80%;
+    line-height: 20px;
+    // margin-top: 20px;
+    word-wrap:break-word;
+        }
+      }
+    }
+  }
+}
+
+.reason-procdure-container {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+//   background-color: red
+  margin-bottom: 10px;
+  .reason-procdure {
+    width: 95%;
+    height: 100%;
+    .procedure-heading {
+      width: 98%;
+      border-bottom: 2px solid #ee2374;
+      margin-left: 20px;
+      height: 23px;
+
+      div {
+        width: 20%;
+        color: #ee2374;
+        height: 25px;
+
+        h3 {
+          margin-left: 10px;
+          font-size: small;
+          font-weight: normal;
+        }
+      }
+    }
+    .procedure-checkbox-inner{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin-left: 40px;
+        margin-top: 20px;
+        justify-content: space-between;
+        .checkbox-setion-1{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+  }
+}
+.concern-site{
+  margin-top: 10px;
+  .concern-site-heading {
+    width: 98%;
+    border-bottom: 2px solid #ee2374;
+    margin-left: 20px;
+    height: 23px;
+
+    div {
+      width: 20%;
+      background-color: #ee2374;
+      color: white;
+      height: 25px;
+
+      h3 {
+        margin-left: 10px;
+        font-size: small;
+        font-weight: normal;
+      }
+    }
+  }
+  .concern-site-container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    .image-section{
+      width: 60%;
+      margin-left: 40px;
+      margin-top: 10px;
+      position:relative ;
+      img{
+        width: 500px;
+        height: 100%;
+      }
+    }
+    .div2{
+      width: 40%;
+      margin-left: 40px;
+      margin-top: 10px;
+    }
+  }
+}
+.bone-density-container{
+  width: 100%;
+  height: 200px;
+  margin-top: 10px;
+  // background-color: aqua;
+  .bone-density-heading {
+    width: 98%;
+    border-bottom: 2px solid #ee2374;
+    margin-left: 20px;
+    height: 23px;
+
+    div {
+      width: 20%;
+      background-color: #ee2374;
+      color: white;
+      height: 25px;
+
+      h3 {
+        margin-left: 10px;
+        font-size: small;
+        font-weight: normal;
+      }
+    }
+  }
+}
+.physician-container {
+  .physician-heading {
+    width: 98%;
+    border-bottom: 2px solid #ee2374;
+    margin-left: 20px;
+    height: 23px;
+
+    div {
+      width: 20%;
+      // display: flex;
+      // align-items: center;
+      background-color: #ee2374;
+      color: white;
+      height: 25px;
+
+      h3 {
+        margin-left: 10px;
+        font-size: small;
+        font-weight: normal;
+      }
+    }
+  }
+  .physician-data-container {
+    width: 100%;
+    height: 250px;
+    // background-color: black;
+    display: flex;
+    flex-direction: row;
+    .physician-data {
+      width: 100%;
+      height: 100%;
+      // margin-top: -10px;
+      // background-color: aqua;
+      .physician-inner-data {
+        width: 97%;
+        margin-left: 20px;
+        // background-color: burlywood;
+        // margin-top: 20px;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        .input-container {
+          width: 100%;
+          height: 25%;
+          display: flex;
+          flex-direction: row;
+          background-color: white;
+          border-bottom: 2px solid black;
+          .patient-name {
+            border: none;
+            margin-top: 28px;
+            width: 70%;
+            background-color: transparent;
+
+            height: 30px;
+            &:focus {
+              outline: none;
+            }
+          }
+          .Mammogram-Year {
+            border: none;
+            margin-top: 28px;
+            background-color: transparent;
+            width: 40%;
+            height: 30px;
+           
+            &:focus {
+              outline: none;
+            }
+          }
+          .patient-date {
+            margin-left: 10px;
+            border: none;
+            margin-top: 27px;
+            background-color: transparent;
+            width: 10%;
+            height: 30px;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+.instruction-container{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  border-top: 2px solid #ee2374;
+  flex-direction: row;
+  .instruction-heading{
+    width: 60%;
+    height: 60px;
+    display: flex;
+align-items: center;
+    background-color: #ee2374;
+    h1{
+      margin-left: 30px;
+      margin-top: 10px;
+color: white;
+    }
+  }
+  .instruction-detail{
+    width: 40%;
+    height: 60px;
+    p{
+      color: #ee2374;
+      margin-top: 10px;
+      margin-left: 30px;
+      font-weight: 500;
+    }
+  }
+  .instructions-points{
+    width: 100%;
+    background-color: red;
+  }
+
+
+
+}
+.instructions-points{
+  margin-left: 30px;
+  p{
+    font-weight: 500;
+  }
+  div{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    // margin-left: 10px;
+    // background-color: #ee2374;
+    // word-wrap: break-word;
+
+
+  }
+  .break{
+    width: 80%;
+    // height: 200px;
+    white-space: normal;
+    word-wrap: break-word;
+    margin-left: 10px;
+  }
+  .break-container{
+    display: flex;
+    flex-direction: row;
+  }
+}
+.insurrance-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 1000px;
+  .insurrance-rows{
+width: 33.3%;
+height: 90%;
+div{
+margin-left: 20px;
+}
+  }
+}
+
+.custom-input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+
+}
+
+.colur-text{
+  color: #ee2374;
+}
+#download{
+  display: none;
+}
